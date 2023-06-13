@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url("images/pokeball.png"), auto;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffd369;
+  height: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darken(#ffd369, 50);
+}
+
+body {
+  background-color: #2c3333;
+  font-family: "Poppins", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+h1 {
+  font-size: 4rem;
+  color: #ffd369;
+  margin-top: 2rem;
+}
+
+.pokeball-image {
+  width: 50px;
+}
+.btn-search {
+  border: none;
+    outline: none;
+    border-radius: 25px;
+    font-family: inherit;
+    padding: 15px 30px;
+    cursor: pointer;
+  background-color: #f82222;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+input,
+button {
+  background-color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  padding: 15px 20px;
+}
+
+input {
+  font-weight: bold;
+  border-radius: 32px;
+  border: 5px solid #ffd369;
+}
+
+input:focus {
+  outline: none;
+}
+
+.poke-container {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+.poke-box {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.poke-box img {
+  width: 100%;
+  padding: 1rem;
+}
+
+.poke-box h4 {
+  font-size: 1.4rem;
+  margin: 5px auto;
+}
+
+.poke-box p {
+  margin: 5px auto;
+  font-weight: 500;
+  margin: 10px;
+}
